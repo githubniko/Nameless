@@ -1,6 +1,4 @@
-﻿#Nameless
-
-Программа предназначена для калибровки дельта-принтера с прошивкой Repetier под Windows.
+Программа предназначена для калибровки дельта-принтера с прошивкой Repetier под Windows
 ---
 [Repetier скачать](https://www.repetier.com/download-now/)
 [Мой конфиг для Anycubic Kossel Linear Plus](https://www.thingiverse.com/download:5849635)
