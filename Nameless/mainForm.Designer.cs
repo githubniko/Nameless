@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.consoleMain = new System.Windows.Forms.RichTextBox();
             this.connectButton = new System.Windows.Forms.Button();
             this.calibrateButton = new System.Windows.Forms.Button();
@@ -137,9 +137,11 @@
             // 
             // consoleMain
             // 
+            this.consoleMain.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.consoleMain.Location = new System.Drawing.Point(233, 89);
             this.consoleMain.Name = "consoleMain";
-            this.consoleMain.Size = new System.Drawing.Size(274, 344);
+            this.consoleMain.Size = new System.Drawing.Size(248, 344);
             this.consoleMain.TabIndex = 0;
             this.consoleMain.Text = "";
             // 
@@ -172,18 +174,22 @@
             // 
             // baudRateCombo
             // 
+            this.baudRateCombo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.baudRateCombo.FormattingEnabled = true;
-            this.baudRateCombo.Location = new System.Drawing.Point(330, 5);
+            this.baudRateCombo.Location = new System.Drawing.Point(295, 5);
             this.baudRateCombo.Name = "baudRateCombo";
-            this.baudRateCombo.Size = new System.Drawing.Size(177, 21);
+            this.baudRateCombo.Size = new System.Drawing.Size(186, 21);
             this.baudRateCombo.TabIndex = 5;
             // 
             // portsCombo
             // 
+            this.portsCombo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.portsCombo.FormattingEnabled = true;
-            this.portsCombo.Location = new System.Drawing.Point(330, 34);
+            this.portsCombo.Location = new System.Drawing.Point(295, 34);
             this.portsCombo.Name = "portsCombo";
-            this.portsCombo.Size = new System.Drawing.Size(177, 21);
+            this.portsCombo.Size = new System.Drawing.Size(186, 21);
             this.portsCombo.TabIndex = 6;
             this.portsCombo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.portsCombo_MouseDown);
             // 
@@ -208,9 +214,11 @@
             // 
             // tabControl1
             // 
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Location = new System.Drawing.Point(517, 5);
+            this.tabControl1.Location = new System.Drawing.Point(504, 5);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(601, 662);
@@ -454,22 +462,22 @@
             // accuracyTime
             // 
             this.accuracyTime.BackColor = System.Drawing.Color.Transparent;
-            chartArea2.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.Percent60;
-            chartArea2.Name = "ChartArea1";
-            this.accuracyTime.ChartAreas.Add(chartArea2);
-            legend2.Enabled = false;
-            legend2.Name = "Legend1";
-            this.accuracyTime.Legends.Add(legend2);
+            chartArea1.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.Percent60;
+            chartArea1.Name = "ChartArea1";
+            this.accuracyTime.ChartAreas.Add(chartArea1);
+            legend1.Enabled = false;
+            legend1.Name = "Legend1";
+            this.accuracyTime.Legends.Add(legend1);
             this.accuracyTime.Location = new System.Drawing.Point(-4, 292);
             this.accuracyTime.Name = "accuracyTime";
-            series2.BackImageTransparentColor = System.Drawing.Color.White;
-            series2.BorderColor = System.Drawing.Color.Transparent;
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series2.IsXValueIndexed = true;
-            series2.Legend = "Legend1";
-            series2.Name = "Accuracy";
-            this.accuracyTime.Series.Add(series2);
+            series1.BackImageTransparentColor = System.Drawing.Color.White;
+            series1.BorderColor = System.Drawing.Color.Transparent;
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.IsXValueIndexed = true;
+            series1.Legend = "Legend1";
+            series1.Name = "Accuracy";
+            this.accuracyTime.Series.Add(series1);
             this.accuracyTime.Size = new System.Drawing.Size(317, 299);
             this.accuracyTime.TabIndex = 211;
             this.accuracyTime.Text = "chart1";
@@ -878,7 +886,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(233, 70);
+            this.label6.Location = new System.Drawing.Point(233, 73);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(48, 13);
             this.label6.TabIndex = 17;
@@ -886,10 +894,12 @@
             // 
             // GCodeBox
             // 
+            this.GCodeBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.GCodeBox.Enabled = false;
-            this.GCodeBox.Location = new System.Drawing.Point(408, 63);
+            this.GCodeBox.Location = new System.Drawing.Point(373, 63);
             this.GCodeBox.Name = "GCodeBox";
-            this.GCodeBox.Size = new System.Drawing.Size(99, 20);
+            this.GCodeBox.Size = new System.Drawing.Size(108, 20);
             this.GCodeBox.TabIndex = 18;
             this.GCodeBox.KeyUp += new System.Windows.Forms.KeyEventHandler(this.GCodeBox_KeyUp);
             // 
@@ -899,7 +909,7 @@
             this.sendGCode.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
             this.sendGCode.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSkyBlue;
             this.sendGCode.FlatAppearance.MouseOverBackColor = System.Drawing.Color.AliceBlue;
-            this.sendGCode.Location = new System.Drawing.Point(330, 61);
+            this.sendGCode.Location = new System.Drawing.Point(295, 61);
             this.sendGCode.Name = "sendGCode";
             this.sendGCode.Size = new System.Drawing.Size(71, 23);
             this.sendGCode.TabIndex = 19;
@@ -983,6 +993,7 @@
             // 
             // CheckBoxAutoScroll
             // 
+            this.CheckBoxAutoScroll.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.CheckBoxAutoScroll.AutoSize = true;
             this.CheckBoxAutoScroll.Checked = true;
             this.CheckBoxAutoScroll.CheckState = System.Windows.Forms.CheckState.Checked;
@@ -996,6 +1007,9 @@
             // 
             // consolePrinter
             // 
+            this.consolePrinter.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.consolePrinter.BackColor = System.Drawing.SystemColors.WindowText;
             this.consolePrinter.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.consolePrinter.ForeColor = System.Drawing.SystemColors.Window;
@@ -1004,7 +1018,7 @@
             this.consolePrinter.Location = new System.Drawing.Point(6, 16);
             this.consolePrinter.Name = "consolePrinter";
             this.consolePrinter.ScrollAlwaysVisible = true;
-            this.consolePrinter.Size = new System.Drawing.Size(506, 173);
+            this.consolePrinter.Size = new System.Drawing.Size(480, 173);
             this.consolePrinter.TabIndex = 4;
             this.consolePrinter.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.consolePrinter_DrawItem);
             this.consolePrinter.MeasureItem += new System.Windows.Forms.MeasureItemEventHandler(this.consolePrinter_MeasureItem);
@@ -1012,12 +1026,15 @@
             // 
             // printerLogPanel
             // 
+            this.printerLogPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.printerLogPanel.Controls.Add(this.consolePrinter);
             this.printerLogPanel.Controls.Add(this.CheckBoxAutoScroll);
             this.printerLogPanel.Controls.Add(this.label1);
             this.printerLogPanel.Location = new System.Drawing.Point(4, 446);
             this.printerLogPanel.Name = "printerLogPanel";
-            this.printerLogPanel.Size = new System.Drawing.Size(516, 221);
+            this.printerLogPanel.Size = new System.Drawing.Size(490, 219);
             this.printerLogPanel.TabIndex = 11;
             // 
             // label4
@@ -1141,10 +1158,9 @@
             // 
             // mainForm
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
-            this.AutoSize = true;
-            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1116, 677);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1104, 681);
             this.Controls.Add(this.checkBoxDiagonalRod);
             this.Controls.Add(this.checkBoxDeltaRad);
             this.Controls.Add(this.label10);

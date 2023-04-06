@@ -23,9 +23,6 @@ namespace Nameless.Class_Files
         public bool isClose; // закрыто ли окно
         public mainForm()
         {
-            FormBorderStyle = FormBorderStyle.FixedSingle;
-            MaximizeBox = false;
-
             Thread.CurrentThread.CurrentUICulture = CultureInfo.CurrentCulture;
 
 
